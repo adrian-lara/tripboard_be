@@ -26,6 +26,14 @@ require 'rspec/rails'
 # If you are not using ActiveRecord, you can remove this line.
 # ActiveRecord::Migration.maintain_test_schema!
 
+require 'vcr'
+
+VCR.configure do |c|
+  c.cassette_library_dir = "spec/fixtures/cassettes"
+  c.filter_sensitive_data("GOOGLE_PLACES_KEY") { ENV["GOOGLE_PLACES_KEY"] }
+  c.hook_into :webmock
+end
+
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"

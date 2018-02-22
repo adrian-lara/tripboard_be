@@ -1,0 +1,357 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/textsearch/json?key=GOOGLE_PLACES_KEY&query=National%20Parks%20Colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 21 Feb 2018 23:42:38 GMT
+      Expires:
+      - Wed, 21 Feb 2018 23:47:38 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '4287'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337;
+        quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "formatted_address" : "Colorado, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 37.7915959,
+                       "lng" : -105.5943276
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 37.82128595,
+                          "lng" : -105.4702779
+                       },
+                       "southwest" : {
+                          "lat" : 37.70252575000001,
+                          "lng" : -105.6356775
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "17cf23f823ef1774ef70c769d9c44542b0250320",
+                 "name" : "Great Sand Dunes National Park and Preserve",
+                 "photos" : [
+                    {
+                       "height" : 3265,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/108558573374685528852/photos\"\u003eJan Boula\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAAfnR4wYLXRMRzGxl7_eeT30CatBMwpaco3at3qYZw39y3dn7y6ncCHeKI8STL2r_HFvol65NxLoplqeteo4y0Dn_cz5fJsu9CgQM_cPC9D3WPy9RBMpe9s9C9-wpDaoeuEhBUXDhbQ2zQkLrGvTs_2O6tGhR7pGYrw7lKhprAIY0V5buVddFZOQ",
+                       "width" : 4898
+                    }
+                 ],
+                 "place_id" : "ChIJx8vZHeYvFIcR2YMP0IqR1zM",
+                 "rating" : 4.8,
+                 "reference" : "CmRbAAAAFIns4tXDRG1tYY-nzI9FgKofP22xSerr6wvL6nNdTptazpg7HOy-c5JT1A3SrNccqD3hUrlm6fe6n_Cyr-ow74-F4iVjavQimhq1ANa9mREMDPMbs3I9wGNp6xuhGdbQEhCxAhqjcoAf1TZG6yyRntgZGhTwxgLlQFHTMjPU6g2gwRlbh3EUBQ",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "Colorado, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 38.5753936,
+                       "lng" : -107.7415961
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.66267920000001,
+                          "lng" : -107.60877545
+                       },
+                       "southwest" : {
+                          "lat" : 38.47893040000001,
+                          "lng" : -107.78586965
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "89a9c03c5c7f4ab2b30676e973f9d395dc1af71b",
+                 "name" : "Black Canyon of the Gunnison National Park",
+                 "photos" : [
+                    {
+                       "height" : 4000,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/114262936544614096672/photos\"\u003eDarius Nabors.\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAA8V1XVR7z48AkkEDEqloOJ-l79Te-k3GxwwG6ekdwS4z13UbEtZpr3zeEnc0ImVgmhCV-fNL3aDnM1k-qvTU5sKF0BOMOz75555y1iAb5oarfwsvbUGTWNkq0Q4-ljR4JEhCfHQWpJZgOcFuseOmD_hg8GhSHt_WKS5lWweIBe7NyXwBBdDhL5g",
+                       "width" : 6000
+                    }
+                 ],
+                 "place_id" : "ChIJ8Wo3SfxeP4cRvIuts5LWMT8",
+                 "rating" : 4.8,
+                 "reference" : "CmRbAAAAX5yn-s3yNPVNBv9-pLAjD9SLK4a5FKIvBMibYpq9kD_OWEOOg0IkWIBEUHDGvcsvelFnEs6o-vGXp6asOhYX-QnprHtuPcGO-yu9m-RizdOL2v3J5Bm79_lDoWdton_8EhCTpAd450POuBtXWaEo2kzvGhTpBA-AColP-pu-p4nQquxh48UISA",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "Colorado, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.3427932,
+                       "lng" : -105.6836389
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.41368594999999,
+                          "lng" : -105.45427315
+                       },
+                       "southwest" : {
+                          "lat" : 40.22512975,
+                          "lng" : -105.96168935
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "4a7036773fe75c48ca48060242290c65ea8fdd49",
+                 "name" : "Rocky Mountain National Park",
+                 "photos" : [
+                    {
+                       "height" : 459,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/115230797092150522443/photos\"\u003eDavid Muckian\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAAW49J0vQ0D_cMm16K-HA6cKUIou-jJiMWp8tHSSjl3EJEiUuqZY5Xpu4XtQZ_i-ZNXDzVITFArP2Q7czdnAbIMsSS6IpU_oIvM4RP0sGhHJB6Qj9dx9XmoP2DsLU1wZ5fEhBXqgd3TwEWlGefm_BNbjCVGhTZiPti5YELwezNt0kuzQPUF-I4mA",
+                       "width" : 816
+                    }
+                 ],
+                 "place_id" : "ChIJ6QNZReR5aYcRF4KOp0PuJ_o",
+                 "rating" : 4.9,
+                 "reference" : "CmRbAAAA2VMq6akO3H-LhnUZdK5PykWcdanTgq6vNMVmCNDEuxqCvobWLM4e2edbnVYufMt_xKls5OBqz-IvnZaplfC0JiGg6Z4Gk6OntAA0apxuAYkbr1K03IisP1D-cs_Rgs7QEhAgJjnDO-5EYFKXQ9m9DTDrGhRAHnN9Q2zOh4qasQCQX8q85b3o0w",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "Rim Rock Drive, Fruita, CO 81521, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.0575219,
+                       "lng" : -108.6938999
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.05887172989272,
+                          "lng" : -108.6925500701073
+                       },
+                       "southwest" : {
+                          "lat" : 39.05617207010728,
+                          "lng" : -108.6952497298927
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "261bc1fbc850080c98f9d61090a87da90d5a644d",
+                 "name" : "Colorado National Monument",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1176,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/110975124246225578582/photos\"\u003ePaul Biwer\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAAcpJiABgNvAOCg5CZqFqDEgGkO9gp5m4QnmLq_vljUqS1vTqeQiY_BpYdkS5cVQR36Hx9qmGjaKONV0bQrE_Vw5rZM8DOAxjFnhvuMbgJXset9eVQmg9V6wmwM2Lxus24EhCuE45gQW66l2_m7dudAEMCGhTwH6cJXloN4PO7lM1lA_lB7nQ4Dw",
+                       "width" : 1752
+                    }
+                 ],
+                 "place_id" : "ChIJIS5HT-v-RocRP4ulj0_qqF8",
+                 "rating" : 4.9,
+                 "reference" : "CmRbAAAAQkhTtfiEyQS4yEF6wyvr2RESZoS5hOGTBlngvS3Wmh1coSle59RJSrP4xscQ2lvZ5FTA24Z-ItwQzU9zddotivVsD_qK7efnYN6mZB2qynXBaQaDVRIk22h5jyFOOKubEhCzslMRcuro969r0M3OXMYGGhTGKEtIUNucw414ORvSRkxUMtSIyw",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "Mesa Verde, CO, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 37.2308729,
+                       "lng" : -108.4618335
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 37.39384849999999,
+                          "lng" : -108.3869844
+                       },
+                       "southwest" : {
+                          "lat" : 37.1765477,
+                          "lng" : -108.4867832
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "f384744b48a982c34a35108ab0c9755a2247e8e1",
+                 "name" : "Mesa Verde National Park",
+                 "photos" : [
+                    {
+                       "height" : 3036,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/112285197750492653202/photos\"\u003eRon Meiners\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAA29AqAUH_s6U2aT9YNYb5FwoFitBVTIfZI9Lle4L6lhwvZ7ZzBe1GKyDcKTPFBmVUHeYNHgOUDJbgfdi1yDzCTfG5RnzFQrZhDbYlb9PNu00ZvoFazHei04gTFme6Dop-EhCh_0m9khrgs7ELCmh8bOhwGhSUJbaw5wA1TmEsof2GHasA0h-lMw",
+                       "width" : 4048
+                    }
+                 ],
+                 "place_id" : "ChIJH3HXLr9gOYcRYxj2G6KV9nk",
+                 "rating" : 4.7,
+                 "reference" : "CmRbAAAAsWh6tnPmCuuiDFVYbxbum1LXzRN2AXf2WLZboygsq-BH9mQLRIKT-ekE2Tz_W1L1wyAdSB7kC9RLw31mI9K47zZGwI1M3Go7ziWb6V1PcInPvqnMwxhkoehIuCa78nk0EhAzDf74TDqbUYd7PwvtfnhMGhQluFzBefyP-zhtSWv_f7gZoiEy6Q",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "11625 East 1500 South, Jensen, UT 84035, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 40.4927096,
+                       "lng" : -108.9416356
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.98427164999999,
+                          "lng" : -107.8458387
+                       },
+                       "southwest" : {
+                          "lat" : 39.99601305000001,
+                          "lng" : -109.8310123
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "59f6c3f2c0afe3d03351735613043cd7c2d8654a",
+                 "name" : "Dinosaur National Monument",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 4000,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/115695974425373556777/photos\"\u003eJon Ryan Jensen\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAAvkgJREWwTwhPytwx_7ZjMn8jO6t3jC-qLRh14fMORY_ywDbwE6KE9gdsmFVhsEXwuKIZiptJNtWf7ElbIfo3Mrzg-SAevkEm6SOqwsdastv7EZuZ8mnUhFufXtflaigoEhCaA-AsI5NokmQac5n_U29rGhS6dRffs-OurkcJO8bW7KS54FZoGQ",
+                       "width" : 6000
+                    }
+                 ],
+                 "place_id" : "ChIJK24Qz-kCRYcRPf3mCvjLJlE",
+                 "rating" : 4.7,
+                 "reference" : "CmRbAAAArak--IoZiRN0dDrQ-xalL8BtWQV3U_uhTHNZT6kdHOxBYSR0aU24PBnHz2wQsUANoDg8NwQ8XmnOQoQplXUW4p6-CiMvL_POgd6MkHMWkdcGOBKbUgj062diZeJhS526EhB54iIA1mi6B49PpdwVE6kdGhQOT4W9dPStvifGQB46JfCE5k2zfw",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "102 Elk Creek, Gunnison, CO 81230, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 38.4657461,
+                       "lng" : -107.1666799
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.46710732989272,
+                          "lng" : -107.1653449701073
+                       },
+                       "southwest" : {
+                          "lat" : 38.46440767010728,
+                          "lng" : -107.1680446298927
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "1e9f7f09f09be450ba5854f01a0238c5aff9c6d5",
+                 "name" : "Curecanti National Recreation Area",
+                 "opening_hours" : {
+                    "open_now" : false,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 1536,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/104107669876932035265/photos\"\u003eBrandon Pooley\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAA4a6qyxzkupryDmQGo7KCjvpeLh_fAXuJPwFHOxq4xPq3BxsLtaHE9logQPkH6sXUEMHbidze8TSUzLDBFJIdk-ZGgV58ZhiJmiNxamWCHPuIlXkTLmNeCXxQIDQQZ2R9EhA9_PBdLJVuVGtGpaYdUyi_GhQIhfm-q6yIeXmsOlnfXq39qm0ohQ",
+                       "width" : 2048
+                    }
+                 ],
+                 "place_id" : "ChIJD4gn9F12P4cRPxxm6rvL4Ro",
+                 "rating" : 4.8,
+                 "reference" : "CmRbAAAA1RaKbxeEo3kYxKpXijPsSGSJaNjq513Bjt1QjId2ba02dF0iwKxzGhU4_DHMz59yJ7W9OmRy8nqrRz_P5B1AFM9AroUqOK-v3jCE6S3iw2VHpTZneLPuHoH7cU-G7mScEhAU4Wk4SiE5r8-g9fQ7SONMGhTcjSai_CVe7w5bc-92CWtVpaElrg",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              },
+              {
+                 "formatted_address" : "United States",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 37.3837623,
+                       "lng" : -109.0726022
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 37.3885272,
+                          "lng" : -109.0712823
+                       },
+                       "southwest" : {
+                          "lat" : 37.382174,
+                          "lng" : -109.0765619
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_recreational-71.png",
+                 "id" : "27fe966d21a7416170acf719edd3620134bda8af",
+                 "name" : "Hovenweep National Monument",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 2848,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/111914061427820530943/photos\"\u003eRobert Baronas\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CmRaAAAAfsv1uaoQJNvwtOvXT5_C1QnqshGcitVTIIOfcdqDWEwKTAX_wO4QyrsdAi1rOn6IylKPh2XFNMJ-ClNiDbgAIdhbS3_hW7zU0DY5nUr7AbeEoWMFpF2PXz6JfZgo-4ipEhD5kRd_ghBsxCXm2w65Oj-3GhRJ29nJfWcaU699DpO-S4SasLF5jA",
+                       "width" : 4272
+                    }
+                 ],
+                 "place_id" : "ChIJM3xUHp-ZOYcRDuKQA1Cv-uo",
+                 "rating" : 4.7,
+                 "reference" : "CmRbAAAA3rwhSXgE4COqBb7dhqfwY2WjRvTJQfPZQyNyUEMCtMCwjDGDAUHsH_aLq3Cp21tBvomEKZpiec7InxtH8snCuQLduVop-Ol-9_BhNQVeQ3UnleSnU1-B8X1gApm2ZRu2EhB33nnhneAO8IzCQJt4a-fVGhTDWb_Bte5RVDhNl7uJQCPWUlX5xQ",
+                 "types" : [ "park", "point_of_interest", "establishment" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Wed, 21 Feb 2018 23:42:38 GMT
+recorded_with: VCR 3.0.3

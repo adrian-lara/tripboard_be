@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 describe "Search Places Endpoint" do
-  it "returns JSON with a maximum of 5 place results each with description and place_id" do
-    VCR.use_cassette 'search_np' do
+  it "returns JSON with a maximum of 5 place results each with name, address, and place_id" do
+    VCR.use_cassette 'search_npc' do
       get '/api/v1/search-places?q=National+Parks+Colorado'
 
       expect(response).to be_success

@@ -27,7 +27,8 @@ class BasicInfoService
         ),
         website: full_info[:website],
         int_phone_number: parse_number(full_info[:international_phone_number]),
-        location: full_info.dig(:geometry, :location)
+        latitude: full_info.dig(:geometry, :location, :lat),
+        longitude: full_info.dig(:geometry, :location, :lng),
       }
     end
 

@@ -14,6 +14,8 @@ describe "Basic Info Endpoint" do
       expect(basic_info).to have_key(:phone_number)
       expect(basic_info).to have_key(:hours)
       expect(basic_info).to have_key(:website)
+      expect(basic_info).to have_key(:int_phone_number)
+      expect(basic_info).to have_key(:location)
     end
   end
 
@@ -30,6 +32,8 @@ describe "Basic Info Endpoint" do
       expect(basic_info).to have_key(:phone_number)
       expect(basic_info).to have_key(:hours)
       expect(basic_info).to have_key(:website)
+      expect(basic_info).to have_key(:int_phone_number)
+      expect(basic_info).to have_key(:location)
     end
   end
 

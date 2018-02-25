@@ -26,7 +26,13 @@ class BasicInfoService
           full_info.dig(:opening_hours, :periods)
         ),
         website: full_info[:website],
+        int_phone_number: parse_number(full_info[:international_phone_number]),
+        location: full_info.dig(:geometry, :location)
       }
+    end
+
+    def parse_number(number)
+      number.gsub(/[- )(]/, "")
     end
 
 end

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get '/search-places', to: "search_places#index"
       get '/basic-info', to: "basic_info#show"
       get '/yelp', to: "yelp#show"
+      get '/weather', to: "weather#show"
     end
   end
 

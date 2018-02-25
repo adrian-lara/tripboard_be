@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/8844b64a44cc0a22/geolookup/q/39.9415559,-75.1493097.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sun, 25 Feb 2018 22:14:39 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Cacheable:
+      - 'YES'
+      X-Creationtime:
+      - '0.083'
+      X-Varnish:
+      - '2275796505'
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 25 Feb 2018 22:14:39 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sun, 25 Feb 2018 22:14:39 GMT
+      Content-Length:
+      - '5492'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"geolookup\": 1\n  }\n\t}\n\t\t,\t\"location\": {\n\t\t\"type\":\"CITY\",\n\t\t\"country\":\"US\",\n\t\t\"country_iso3166\":\"US\",\n\t\t\"country_name\":\"USA\",\n\t\t\"state\":\"PA\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"tz_short\":\"EST\",\n\t\t\"tz_long\":\"America/New_York\",\n\t\t\"lat\":\"39.940000\",\n\t\t\"lon\":\"-75.140000\",\n\t\t\"zip\":\"19147\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"99999\",\n\t\t\"l\":\"/q/zmw:19147.1.99999\",\n\t\t\"requesturl\":\"US/PA/Philadelphia.html\",\n\t\t\"wuiurl\":\"https://www.wunderground.com/US/PA/Philadelphia.html\",\n\t\t\"nearby_weather_stations\":
+        {\n\t\t\"airport\": {\n\t\t\"station\": [\n\t\t{ \"city\":\"Philadelphia\",
+        \"state\":\"PA\", \"country\":\"US\", \"icao\":\"KPHL\", \"lat\":\"39.86999893\",
+        \"lon\":\"-75.23999786\" }\n\t\t,{ \"city\":\"Northeast Philadelphia\", \"state\":\"PA\",
+        \"country\":\"US\", \"icao\":\"KPNE\", \"lat\":\"40.08000183\", \"lon\":\"-75.01000214\"
+        }\n\t\t,{ \"city\":\"Philadelphia Wings Airport\", \"state\":\"PA\", \"country\":\"US\",
+        \"icao\":\"KLOM\", \"lat\":\"40.13999939\", \"lon\":\"-75.26999664\" }\n\t\t,{
+        \"city\":\"Mount Holly\", \"state\":\"NJ\", \"country\":\"US\", \"icao\":\"KVAY\",
+        \"lat\":\"39.93999863\", \"lon\":\"-74.84999847\" }\n\t\t]\n\t\t}\n\t\t,\n\t\t\"pws\":
+        {\n\t\t\"station\": [\n\t\t{\n\t\t\"neighborhood\":\"Society Hill, Philadelphia\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA99\",\n\t\t\"lat\":39.943699,\n\t\t\"lon\":-75.150902,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Philadelphia\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA132\",\n\t\t\"lat\":39.950191,\n\t\t\"lon\":-75.140442,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":0\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Philadelphia\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA127\",\n\t\t\"lat\":39.929951,\n\t\t\"lon\":-75.155327,\n\t\t\"distance_km\":1,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Dudley
+        Street\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA168\",\n\t\t\"lat\":39.923279,\n\t\t\"lon\":-75.149239,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Passyunk
+        Square\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA136\",\n\t\t\"lat\":39.933628,\n\t\t\"lon\":-75.162636,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"E.M.
+        Stanton School (SW Center City)\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA174\",\n\t\t\"lat\":39.939095,\n\t\t\"lon\":-75.164459,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Philadelphia\",\n\t\t\"city\":\"Hawthorne\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAHAWTH2\",\n\t\t\"lat\":39.940041,\n\t\t\"lon\":-75.166428,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Martin
+        Aaron\",\n\t\t\"city\":\"Camden\",\n\t\t\"state\":\"NJ\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KNJCAMDE5\",\n\t\t\"lat\":39.925323,\n\t\t\"lon\":-75.118309,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Northern
+        Liberties\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA158\",\n\t\t\"lat\":39.964020,\n\t\t\"lon\":-75.141731,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Graduate
+        Hospital\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA88\",\n\t\t\"lat\":39.942276,\n\t\t\"lon\":-75.172577,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Northern
+        Liberties\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA153\",\n\t\t\"lat\":39.965061,\n\t\t\"lon\":-75.141243,\n\t\t\"distance_km\":2,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Graduate
+        Hospital - 21st/Carpenter\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA122\",\n\t\t\"lat\":39.940567,\n\t\t\"lon\":-75.178070,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":1\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"South
+        Kensington\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA131\",\n\t\t\"lat\":39.971172,\n\t\t\"lon\":-75.136185,\n\t\t\"distance_km\":3,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Fairmount\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA130\",\n\t\t\"lat\":39.971710,\n\t\t\"lon\":-75.173752,\n\t\t\"distance_km\":4,\n\t\t\"distance_mi\":2\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Port
+        Richmond (JcWeather)\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA4\",\n\t\t\"lat\":39.980930,\n\t\t\"lon\":-75.112869,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Brewerytown
+        Philadelphia\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA97\",\n\t\t\"lat\":39.974442,\n\t\t\"lon\":-75.183960,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"East
+        Kensington (send_help_weather)\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA138\",\n\t\t\"lat\":39.986835,\n\t\t\"lon\":-75.124557,\n\t\t\"distance_km\":5,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"University
+        City-Kingsessing\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA40\",\n\t\t\"lat\":39.944237,\n\t\t\"lon\":-75.217361,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"SW
+        Cedar Park\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA100\",\n\t\t\"lat\":39.945702,\n\t\t\"lon\":-75.217186,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":3\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"SW
+        Cedar Park\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA57\",\n\t\t\"lat\":39.945885,\n\t\t\"lon\":-75.217850,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":4\n\t\t},\n\t\t{\n\t\t\"neighborhood\":\"Squirrel
+        Hill\",\n\t\t\"city\":\"Philadelphia\",\n\t\t\"state\":\"PA\",\n\t\t\"country\":\"US\",\n\t\t\"id\":\"KPAPHILA126\",\n\t\t\"lat\":39.946903,\n\t\t\"lon\":-75.220161,\n\t\t\"distance_km\":6,\n\t\t\"distance_mi\":4\n\t\t}\n\t\t]\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sun, 25 Feb 2018 22:14:39 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/8844b64a44cc0a22/planner_03010303/q/PA/Philadelphia.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sun, 25 Feb 2018 22:14:39 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Cacheable:
+      - 'YES'
+      X-Creationtime:
+      - '0.188'
+      X-Varnish:
+      - '2822943389'
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 25 Feb 2018 22:14:40 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sun, 25 Feb 2018 22:14:40 GMT
+      Content-Length:
+      - '3770'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"planner\": 1\n  }\n\t}\n\t\t,\n\t\"trip\": {\n\t\t\"title\":
+        \"Historical Summary for March 01 - March 03\",\n\t\t\"airport_code\": \"KPHL\",\n\t\t\"error\":
+        \"\",\n\t\t\"period_of_record\": {\n\t\t\"date_start\": {\n\t\t\"date\":{\n\t\"epoch\":\"1362157200\",\n\t\"pretty\":\"12:00
+        PM EST on March 01, 2013\",\n\t\"day\":1,\n\t\"month\":3,\n\t\"year\":2013,\n\t\"yday\":59,\n\t\"hour\":12,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"March\",\n\t\"monthname_short\":\"Mar\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EST\",\n\t\"tz_long\":\"America/New_York\"\n}\n\t\t},\n\t\t\"date_end\":
+        {\n\t\t\"date\":{\n\t\"epoch\":\"1488560400\",\n\t\"pretty\":\"12:00 PM EST
+        on March 03, 2017\",\n\t\"day\":3,\n\t\"month\":3,\n\t\"year\":2017,\n\t\"yday\":61,\n\t\"hour\":12,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"March\",\n\t\"monthname_short\":\"Mar\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"EST\",\n\t\"tz_long\":\"America/New_York\"\n}\n\t\t}\n\t\t},\n\t\t\"temp_high\":
+        {\n\t\t\"min\": {\n\t\t\"F\": \"32\",\n\t\t\"C\": \"0\"\n\t\t},\n\t\t\"avg\":
+        {\n\t\t\"F\": \"46\",\n\t\t\"C\": \"8\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\":
+        \"74\",\n\t\t\"C\": \"23\"\n\t\t}\n\t\t},\n\t\t\"temp_low\": {\n\t\t\"min\":
+        {\n\t\t\"F\": \"16\",\n\t\t\"C\": \"-9\"\n\t\t},\n\t\t\"avg\": {\n\t\t\"F\":
+        \"30\",\n\t\t\"C\": \"-1\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\": \"56\",\n\t\t\"C\":
+        \"13\"\n\t\t}\n\t\t},\n\t\t\"precip\": {\n\t\t\"min\": {\n\t\t\"in\": \"0.00\",\n\t\t\"cm\":
+        \"0.0\"\n\t\t},\n\t\t\"avg\": {\n\t\t\"in\": \"0.17\",\n\t\t\"cm\": \"4.2\"\n\t\t},\n\t\t\"max\":
+        {\n\t\t\"in\": \"0.61\",\n\t\t\"cm\": \"15.5\"\n\t\t}\n\t\t},\n\t\t\"dewpoint_high\":
+        {\n\t\t\"min\": {\n\t\t\"F\": \"20\",\n\t\t\"C\": \"-7\"\n\t\t},\n\t\t\"avg\":
+        {\n\t\t\"F\": \"34\",\n\t\t\"C\": \"1\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\":
+        \"62\",\n\t\t\"C\": \"17\"\n\t\t}\n\t\t},\n\t\t\"dewpoint_low\": {\n\t\t\"min\":
+        {\n\t\t\"F\": \"-1\",\n\t\t\"C\": \"-18\"\n\t\t},\n\t\t\"avg\": {\n\t\t\"F\":
+        \"15\",\n\t\t\"C\": \"-10\"\n\t\t},\n\t\t\"max\": {\n\t\t\"F\": \"49\",\n\t\t\"C\":
+        \"9\"\n\t\t}\n\t\t},\n\t\t\"cloud_cover\": {\n\t\t\"cond\": \"mostly cloudy\"\n\t\t},\n\t\t\"chance_of\":
+        {\n\t\t\"tempoverfreezing\": {\n\t\t\"name\": \"Cool\",\n\t\t\"description\":
+        \"temperature between 32&deg;F / 0&deg;C and 60&deg;F / 16&deg; C\",\n\t\t\"percentage\":
+        \"67\"\n\t\t},\n\t\t\"chanceofwindyday\": {\n\t\t\"name\": \"Windy\",\n\t\t\"description\":
+        \"average wind over 10 mph / 15km/h\",\n\t\t\"percentage\": \"60\"\n\t\t},\n\t\t\"chanceofprecip\":
+        {\n\t\t\"name\": \"Precipitation\",\n\t\t\"description\": \"\",\n\t\t\"percentage\":
+        \"60\"\n\t\t},\n\t\t\"chanceofpartlycloudyday\": {\n\t\t\"name\": \"Partly
+        Cloudy\",\n\t\t\"description\": \"\",\n\t\t\"percentage\": \"53\"\n\t\t},\n\t\t\"chanceofrainday\":
+        {\n\t\t\"name\": \"Rain\",\n\t\t\"description\": \"\",\n\t\t\"percentage\":
+        \"47\"\n\t\t},\n\t\t\"chanceofsnowday\": {\n\t\t\"name\": \"Snow\",\n\t\t\"description\":
+        \"\",\n\t\t\"percentage\": \"40\"\n\t\t},\n\t\t\"chanceofcloudyday\": {\n\t\t\"name\":
+        \"Cloudy\",\n\t\t\"description\": \"\",\n\t\t\"percentage\": \"40\"\n\t\t},\n\t\t\"tempoversixty\":
+        {\n\t\t\"name\": \"Warm\",\n\t\t\"description\": \"temperature over 60&deg;F
+        / 16&deg;C and below 90&deg;F / 32&deg;C\",\n\t\t\"percentage\": \"27\"\n\t\t},\n\t\t\"chanceofsnowonground\":
+        {\n\t\t\"name\": \"Ground Snow\",\n\t\t\"description\": \"\",\n\t\t\"percentage\":
+        \"7\"\n\t\t},\n\t\t\"chanceofhumidday\": {\n\t\t\"name\": \"Humid\",\n\t\t\"description\":
+        \"dew point over 60&deg;F / 16&deg;C\",\n\t\t\"percentage\": \"7\"\n\t\t},\n\t\t\"chanceofsunnycloudyday\":
+        {\n\t\t\"name\": \"Sunny\",\n\t\t\"description\": \"\",\n\t\t\"percentage\":
+        \"7\"\n\t\t},\n\t\t\"chanceoftornadoday\": {\n\t\t\"name\": \"Tornado\",\n\t\t\"description\":
+        \"\",\n\t\t\"percentage\": \"0\"\n\t\t},\n\t\t\"chanceofsultryday\": {\n\t\t\"name\":
+        \"Sweltering\",\n\t\t\"description\": \"dew point over 70&deg;F / 21&deg;C\",\n\t\t\"percentage\":
+        \"0\"\n\t\t},\n\t\t\"tempbelowfreezing\": {\n\t\t\"name\": \"Freezing\",\n\t\t\"description\":
+        \"temperature below 32&deg;F / 0&deg;C\",\n\t\t\"percentage\": \"0\"\n\t\t},\n\t\t\"tempoverninety\":
+        {\n\t\t\"name\": \"Hot\",\n\t\t\"description\": \"temperature over 90&deg;F
+        / 32&deg;C\",\n\t\t\"percentage\": \"0\"\n\t\t},\n\t\t\"chanceofthunderday\":
+        {\n\t\t\"name\": \"Thunderstorms\",\n\t\t\"description\": \"\",\n\t\t\"percentage\":
+        \"0\"\n\t\t},\n\t\t\"chanceofhailday\": {\n\t\t\"name\": \"Hail\",\n\t\t\"description\":
+        \"\",\n\t\t\"percentage\": \"0\"\n\t\t},\n\t\t\"chanceoffogday\": {\n\t\t\"name\":
+        \"Fog\",\n\t\t\"description\": \"\",\n\t\t\"percentage\": \"0\"\n\t\t}\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sun, 25 Feb 2018 22:14:40 GMT
+recorded_with: VCR 3.0.3

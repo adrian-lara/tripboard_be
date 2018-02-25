@@ -32,7 +32,7 @@ class BasicInfoService
     end
 
     def parse_number(number)
-      number.gsub(/[- )(]/, "")
+      number.gsub(/[- +)(]/, "")
     end
 
 end

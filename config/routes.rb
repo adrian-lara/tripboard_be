@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get '/welcome', to: "welcome#show"
       get '/search-places', to: "search_places#index"
       get '/basic-info', to: "basic_info#show"
+      get '/yelp', to: "yelp#show"
     end
   end
 

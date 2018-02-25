@@ -1,0 +1,321 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search/phone?phone=%2B12159281911
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer HIQvHE5S68HPOQUl-sZ9Ee6VJo_XzpPXh1qq0DV3NyweB16CusTkz4t0hyHKUhOr-i9r_x0vvqnxtEsy9OCXUPoe78t29aHlnxnwL03qdPwY1ZByAIK7tX_yhlWSWnYx
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '25000'
+      Ratelimit-Remaining:
+      - '24975'
+      Ratelimit-Resettime:
+      - '2018-02-26T00:00:00+00:00'
+      X-Proxied:
+      - 10-65-123-187-useast1aprod
+      Transfer-Encoding:
+      - chunked
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 25 Feb 2018 08:47:28 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-dfw18635-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "jims-steaks-philadelphia-6", "name": "Jim''s
+        Steaks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eHfm0lKSyq-9n9EF3rt_BA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jims-steaks-philadelphia-6?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_phone_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 1920, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}, {"alias": "pizza", "title":
+        "Pizza"}], "rating": 3.5, "coordinates": {"latitude": 39.9415112, "longitude":
+        -75.1492746}, "transactions": [], "price": "$", "location": {"address1": "400
+        South St", "address2": "", "address3": "", "city": "Philadelphia", "zip_code":
+        "19147", "country": "US", "state": "PA", "display_address": ["400 South St",
+        "Philadelphia, PA 19147"]}, "phone": "+12159281911", "display_phone": "(215)
+        928-1911"}], "total": 1}'
+    http_version: 
+  recorded_at: Sun, 25 Feb 2018 08:47:28 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?latitude=39.9415559&longitude=-75.1493097&term=Jims%20Steaks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer HIQvHE5S68HPOQUl-sZ9Ee6VJo_XzpPXh1qq0DV3NyweB16CusTkz4t0hyHKUhOr-i9r_x0vvqnxtEsy9OCXUPoe78t29aHlnxnwL03qdPwY1ZByAIK7tX_yhlWSWnYx
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '25000'
+      Ratelimit-Remaining:
+      - '24974'
+      Ratelimit-Resettime:
+      - '2018-02-26T00:00:00+00:00'
+      X-Proxied:
+      - 10-65-132-129-useast1bprod
+      Transfer-Encoding:
+      - chunked
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 25 Feb 2018 08:47:29 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-dfw18630-DFW
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "jims-steaks-philadelphia-6", "name": "Jim''s
+        Steaks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eHfm0lKSyq-9n9EF3rt_BA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jims-steaks-philadelphia-6?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 1920, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}, {"alias": "pizza", "title":
+        "Pizza"}], "rating": 3.5, "coordinates": {"latitude": 39.9415112, "longitude":
+        -75.1492746}, "transactions": [], "price": "$", "location": {"address1": "400
+        South St", "address2": "", "address3": "", "city": "Philadelphia", "zip_code":
+        "19147", "country": "US", "state": "PA", "display_address": ["400 South St",
+        "Philadelphia, PA 19147"]}, "phone": "+12159281911", "display_phone": "(215)
+        928-1911", "distance": 5.801663779838}, {"id": "jims-steaks-philadelphia-2",
+        "name": "Jim''s Steaks", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/oZvsrXVJK-_Pr50vtama8Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jims-steaks-philadelphia-2?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 303, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "burgers", "title": "Burgers"}, {"alias": "cheesesteaks", "title":
+        "Cheesesteaks"}], "rating": 4.0, "coordinates": {"latitude": 39.96922, "longitude":
+        -75.24305}, "transactions": [], "price": "$", "location": {"address1": "431
+        N 62nd St", "address2": "", "address3": "", "city": "Philadelphia", "zip_code":
+        "19151", "country": "US", "state": "PA", "display_address": ["431 N 62nd St",
+        "Philadelphia, PA 19151"]}, "phone": "+12157476615", "display_phone": "(215)
+        747-6615", "distance": 8564.407808254384}, {"id": "ishkabibbles-philadelphia",
+        "name": "Ishkabibble''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/chclDqoegpXOfUiks-I77g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ishkabibbles-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 527, "categories": [{"alias": "cheesesteaks", "title": "Cheesesteaks"},
+        {"alias": "pizza", "title": "Pizza"}, {"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.9416787531078, "longitude":
+        -75.1487875935712}, "transactions": [], "price": "$", "location": {"address1":
+        "337 S St", "address2": "", "address3": "", "city": "Philadelphia", "zip_code":
+        "19147", "country": "US", "state": "PA", "display_address": ["337 S St", "Philadelphia,
+        PA 19147"]}, "phone": "+12159234337", "display_phone": "(215) 923-4337", "distance":
+        46.560195666107994}, {"id": "sonnys-famous-steaks-philadelphia", "name": "Sonny''s
+        Famous Steaks", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/iYTMp6GHVXA7YfO37Ao8rQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sonnys-famous-steaks-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 1059, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}, {"alias": "burgers", "title":
+        "Burgers"}], "rating": 4.0, "coordinates": {"latitude": 39.9499178538079,
+        "longitude": -75.1447920753477}, "transactions": [], "price": "$$", "location":
+        {"address1": "228 Market St", "address2": "", "address3": "", "city": "Philadelphia",
+        "zip_code": "19106", "country": "US", "state": "PA", "display_address": ["228
+        Market St", "Philadelphia, PA 19106"]}, "phone": "+12156295760", "display_phone":
+        "(215) 629-5760", "distance": 1006.4066916930681}, {"id": "cleavers-philadelphia",
+        "name": "Cleavers", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/QIQYgojI4SLpZynZmYD3SA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cleavers-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 547, "categories": [{"alias": "cheesesteaks", "title": "Cheesesteaks"},
+        {"alias": "sandwiches", "title": "Sandwiches"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.9513931274414, "longitude": -75.1706237792969}, "transactions":
+        ["delivery", "pickup"], "price": "$$", "location": {"address1": "108 S 18th
+        St", "address2": "", "address3": "", "city": "Philadelphia", "zip_code": "19103",
+        "country": "US", "state": "PA", "display_address": ["108 S 18th St", "Philadelphia,
+        PA 19103"]}, "phone": "+12155153828", "display_phone": "(215) 515-3828", "distance":
+        2120.69532790373}, {"id": "pats-king-of-steaks-philadelphia-2", "name": "Pat''s
+        King of Steaks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/n1_PVV9gN5DkL6B2PXfu1w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pats-king-of-steaks-philadelphia-2?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 3463, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}, {"alias": "italian", "title":
+        "Italian"}], "rating": 3.0, "coordinates": {"latitude": 39.9332010582612,
+        "longitude": -75.1592658139918}, "transactions": [], "price": "$", "location":
+        {"address1": "1237 E Passyunk Ave", "address2": "", "address3": "", "city":
+        "Philadelphia", "zip_code": "19147", "country": "US", "state": "PA", "display_address":
+        ["1237 E Passyunk Ave", "Philadelphia, PA 19147"]}, "phone": "+12154681546",
+        "display_phone": "(215) 468-1546", "distance": 1258.411408450138}, {"id":
+        "tony-lukes-philadelphia-9", "name": "Tony Luke''s", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qhQQsgAsm-79Kyc7HGSgyw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tony-lukes-philadelphia-9?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 1474, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 4.0, "coordinates": {"latitude":
+        39.9141065085686, "longitude": -75.148727230422}, "transactions": ["delivery",
+        "pickup"], "price": "$", "location": {"address1": "39 E Oregon Ave", "address2":
+        "", "address3": "", "city": "Philadelphia", "zip_code": "19148", "country":
+        "US", "state": "PA", "display_address": ["39 E Oregon Ave", "Philadelphia,
+        PA 19148"]}, "phone": "+12155515725", "display_phone": "(215) 551-5725", "distance":
+        3052.63375848595}, {"id": "genos-steaks-philadelphia", "name": "Geno''s Steaks",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/mUJo9tO2euPwQxknN_927g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/genos-steaks-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 2682, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}], "rating": 2.5, "coordinates":
+        {"latitude": 39.9338367849925, "longitude": -75.158813752375}, "transactions":
+        [], "price": "$", "location": {"address1": "1219 S 9th St", "address2": "",
+        "address3": "", "city": "Philadelphia", "zip_code": "19147", "country": "US",
+        "state": "PA", "display_address": ["1219 S 9th St", "Philadelphia, PA 19147"]},
+        "phone": "+12153890659", "display_phone": "(215) 389-0659", "distance": 1180.381486246896},
+        {"id": "johns-roast-pork-philadelphia", "name": "John''s Roast Pork", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/EpWtxVlzavsgEK4zd0T8cQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/johns-roast-pork-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 1018, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.9210273851256, "longitude": -75.14502844377}, "transactions":
+        [], "price": "$", "location": {"address1": "14 E Snyder Ave", "address2":
+        "", "address3": "", "city": "Philadelphia", "zip_code": "19148", "country":
+        "US", "state": "PA", "display_address": ["14 E Snyder Ave", "Philadelphia,
+        PA 19148"]}, "phone": "+12154631951", "display_phone": "(215) 463-1951", "distance":
+        2311.66896900649}, {"id": "cosmis-deli-philadelphia", "name": "Cosmi''s Deli",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YMqiFU0wC9SQ7lAKiD0NAQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cosmis-deli-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 295, "categories": [{"alias": "delis", "title": "Delis"},
+        {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "cheesesteaks",
+        "title": "Cheesesteaks"}], "rating": 4.5, "coordinates": {"latitude": 39.93029,
+        "longitude": -75.15798}, "transactions": ["delivery", "pickup"], "price":
+        "$", "location": {"address1": "1501 S 8th St", "address2": "", "address3":
+        "", "city": "Philadelphia", "zip_code": "19147", "country": "US", "state":
+        "PA", "display_address": ["1501 S 8th St", "Philadelphia, PA 19147"]}, "phone":
+        "+12154686093", "display_phone": "(215) 468-6093", "distance": 1456.07965981602},
+        {"id": "gooey-looies-philadelphia", "name": "Gooey Looie''s", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/v1B888KCZ9pnjAON_BHwtw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/gooey-looies-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 181, "categories": [{"alias": "delis", "title": "Delis"},
+        {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "cheesesteaks",
+        "title": "Cheesesteaks"}], "rating": 4.5, "coordinates": {"latitude": 39.92534,
+        "longitude": -75.15075}, "transactions": [], "price": "$", "location": {"address1":
+        "231 McClellan St", "address2": "", "address3": "", "city": "Philadelphia",
+        "zip_code": "19148", "country": "US", "state": "PA", "display_address": ["231
+        McClellan St", "Philadelphia, PA 19148"]}, "phone": "+12153347668", "display_phone":
+        "(215) 334-7668", "distance": 1810.259317563108}, {"id": "steves-prince-of-steaks-philadelphia-2",
+        "name": "Steve''s Prince of Steaks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_fvxOVS62c34wa5PtUT2TQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/steves-prince-of-steaks-philadelphia-2?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 348, "categories": [{"alias": "cheesesteaks", "title": "Cheesesteaks"},
+        {"alias": "burgers", "title": "Burgers"}], "rating": 3.0, "coordinates": {"latitude":
+        39.951263, "longitude": -75.167195}, "transactions": [], "price": "$$", "location":
+        {"address1": "41 S 16th St", "address2": null, "address3": "", "city": "Philadelphia",
+        "zip_code": "19102", "country": "US", "state": "PA", "display_address": ["41
+        S 16th St", "Philadelphia, PA 19102"]}, "phone": "+12159726090", "display_phone":
+        "(215) 972-6090", "distance": 1868.0660861601082}, {"id": "tommy-dinics-philadelphia",
+        "name": "Tommy DiNic''s", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/l6_fiP8WhuGlMRNB0xx_kg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tommy-dinics-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 1783, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "sandwiches", "title": "Sandwiches"}], "rating":
+        4.0, "coordinates": {"latitude": 39.953478370008, "longitude": -75.1593960603483},
+        "transactions": [], "price": "$", "location": {"address1": "1136 Arch St",
+        "address2": "", "address3": "Reading Terminal Market", "city": "Philadelphia",
+        "zip_code": "19147", "country": "US", "state": "PA", "display_address": ["1136
+        Arch St", "Reading Terminal Market", "Philadelphia, PA 19147"]}, "phone":
+        "+12159236175", "display_phone": "(215) 923-6175", "distance": 1580.1301939858859},
+        {"id": "nicks-roast-beef-bar-and-grille-philadelphia", "name": "Nick''s Roast
+        Beef Bar & Grille", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/UJZjCkijNUz47RmTTkk2Wg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/nicks-roast-beef-bar-and-grille-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 149, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
+        "sandwiches", "title": "Sandwiches"}, {"alias": "tradamerican", "title": "American
+        (Traditional)"}], "rating": 4.0, "coordinates": {"latitude": 39.9495, "longitude":
+        -75.14404}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "16 S 2nd St", "address2": "", "address3": "", "city": "Philadelphia", "zip_code":
+        "19106", "country": "US", "state": "PA", "display_address": ["16 S 2nd St",
+        "Philadelphia, PA 19106"]}, "phone": "+12159289411", "display_phone": "(215)
+        928-9411", "distance": 998.8776650331221}, {"id": "joes-steaks-soda-shop-philadelphia-4",
+        "name": "Joe''s Steaks + Soda Shop", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/MPxYZANl6mKu50m894D3UQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/joes-steaks-soda-shop-philadelphia-4?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 191, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "sandwiches", "title": "Sandwiches"}, {"alias":
+        "cheesesteaks", "title": "Cheesesteaks"}], "rating": 4.0, "coordinates": {"latitude":
+        39.9688387026846, "longitude": -75.1344286055723}, "transactions": [], "price":
+        "$$", "location": {"address1": "1 W Girard Ave", "address2": "", "address3":
+        "", "city": "Philadelphia", "zip_code": "19125", "country": "US", "state":
+        "PA", "display_address": ["1 W Girard Ave", "Philadelphia, PA 19125"]}, "phone":
+        "+12154235637", "display_phone": "(215) 423-5637", "distance": 3288.19454409295},
+        {"id": "jimmy-gs-steaks-philadelphia", "name": "Jimmy G''s Steaks", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/XLsDbPG93n-ICpw07v-dag/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/jimmy-gs-steaks-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 172, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cheesesteaks", "title": "Cheesesteaks"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.9662389, "longitude": -75.1603872}, "transactions": ["delivery",
+        "pickup"], "price": "$", "location": {"address1": "695 N Broad St", "address2":
+        "", "address3": "", "city": "Philadelphia", "zip_code": "19123", "country":
+        "US", "state": "PA", "display_address": ["695 N Broad St", "Philadelphia,
+        PA 19123"]}, "phone": "+12157632495", "display_phone": "(215) 763-2495", "distance":
+        2902.4985163075075}, {"id": "woodrows-sandwich-shop-philadelphia", "name":
+        "Woodrow''s Sandwich Shop", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wbGuDT7E7QYYK4CdpKTM-Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/woodrows-sandwich-shop-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 108, "categories": [{"alias": "sandwiches", "title": "Sandwiches"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.9419326782227, "longitude":
+        -75.1531982421875}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "630 South St", "address2": "", "address3": "", "city":
+        "Philadelphia", "zip_code": "19147", "country": "US", "state": "PA", "display_address":
+        ["630 South St", "Philadelphia, PA 19147"]}, "phone": "+12154703559", "display_phone":
+        "(215) 470-3559", "distance": 337.653410626292}, {"id": "ishkabibbles-philadelphia-2",
+        "name": "Ishkabibble''s", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Ggwb2iyFf9wZgalg5wybLw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ishkabibbles-philadelphia-2?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 98, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "cheesesteaks", "title": "Cheesesteaks"}, {"alias":
+        "burgers", "title": "Burgers"}], "rating": 3.5, "coordinates": {"latitude":
+        39.9420743148415, "longitude": -75.1513070827615}, "transactions": [], "price":
+        "$$", "location": {"address1": "517 S St", "address2": "", "address3": "",
+        "city": "Philadelphia", "zip_code": "19147", "country": "US", "state": "PA",
+        "display_address": ["517 S St", "Philadelphia, PA 19147"]}, "phone": "+12159220494",
+        "display_phone": "(215) 922-0494", "distance": 179.774868949482}, {"id": "famous-4th-street-delicatessen-philadelphia",
+        "name": "Famous 4th Street Delicatessen", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/yPi6ah2Inu8BlKJ1r1usPw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/famous-4th-street-delicatessen-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 421, "categories": [{"alias": "delis", "title": "Delis"},
+        {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "breakfast_brunch",
+        "title": "Breakfast & Brunch"}], "rating": 4.0, "coordinates": {"latitude":
+        39.9404141, "longitude": -75.1496063}, "transactions": [], "price": "$$",
+        "location": {"address1": "700 S 4th St", "address2": "", "address3": "", "city":
+        "Philadelphia", "zip_code": "19147", "country": "US", "state": "PA", "display_address":
+        ["700 S 4th St", "Philadelphia, PA 19147"]}, "phone": "+12159223274", "display_phone":
+        "(215) 922-3274", "distance": 122.44661217390998}, {"id": "philips-steaks-philadelphia",
+        "name": "Philip''s Steaks", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/iXpCbV2BjPmfPzqtMvGVSA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/philips-steaks-philadelphia?adjust_creative=vxKsFKa4Nf00iDDmKjueqg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=vxKsFKa4Nf00iDDmKjueqg",
+        "review_count": 219, "categories": [{"alias": "cheesesteaks", "title": "Cheesesteaks"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.9225830142603, "longitude":
+        -75.184814060852}, "transactions": [], "price": "$", "location": {"address1":
+        "2234 W Passyunk Ave", "address2": "", "address3": "", "city": "Philadelphia",
+        "zip_code": "19145", "country": "US", "state": "PA", "display_address": ["2234
+        W Passyunk Ave", "Philadelphia, PA 19145"]}, "phone": "+12157554820", "display_phone":
+        "(215) 755-4820", "distance": 3689.8729195326255}], "total": 115, "region":
+        {"center": {"longitude": -75.1493097, "latitude": 39.9415559}}}'
+    http_version: 
+  recorded_at: Sun, 25 Feb 2018 08:47:29 GMT
+recorded_with: VCR 3.0.3
